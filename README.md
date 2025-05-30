@@ -1,5 +1,5 @@
 # LlaqeNDCApp
-Laravel Drug Search App, with Breeze for Authentication, Livewire, and Profile Funcionality
+Laravel Drug Search App, with Breeze for Authentication, Livewire, and Profile+export Functionality
 
 
 ````markdown
