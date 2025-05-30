@@ -1,7 +1,6 @@
 # LlaqeNDCApp
 Laravel Drug Search App, with Breeze for Authentication, Livewire, and Profile Funcionality
 
-Apologies for the confusion earlier! Here's the **entire README** in a single block of text, formatted properly in **Markdown**:
 
 ````markdown
 # Drug Search Application Setup
