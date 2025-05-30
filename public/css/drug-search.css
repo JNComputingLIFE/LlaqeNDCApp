@@ -1,0 +1,136 @@
+.drug-search-wrapper {
+    /* Center horizontally and vertically */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding: 1rem;
+    box-sizing: border-box;
+    position:relative;
+}
+
+.top-left-logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 60px;
+    height: auto;
+    z-index: 1000;
+}
+
+.drug-search-wrapper .page-wrapper {
+    width: 100%;
+    max-width: 900px;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+.drug-search-wrapper h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.drug-search-wrapper .search-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.drug-search-wrapper .search-group input[type="text"] {
+    width: 60%;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    font-size: 1rem;
+}
+
+.drug-search-wrapper .search-group button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 0.55rem 1.5rem;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    font-size: 1rem;
+}
+
+.drug-search-wrapper .search-group button:hover {
+    background-color: #0056b3;
+}
+
+.drug-search-wrapper table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.drug-search-wrapper table th,
+.drug-search-wrapper table td {
+    padding: 0.75rem 1rem;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.drug-search-wrapper table th {
+    background-color: #f0f0f0;
+}
+
+.drug-search-wrapper .buttons-row {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.drug-search-wrapper .buttons-row button {
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.drug-search-wrapper .buttons-row button:first-child {
+    background-color: #28a745;
+}
+
+.drug-search-wrapper .buttons-row button.register-all {
+    background-color: #6f42c1;
+}
+
+.drug-search-wrapper .buttons-row button:hover {
+    opacity: 0.85;
+}
+
+/* Loading overlay */
+.drug-search-wrapper .loading-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(255,255,255,0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    z-index: 999;
+}
+
+.drug-search-wrapper .spinner {
+    width: 24px;
+    height: 24px;
+    border: 3px solid #007BFF;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-right: 0.5rem;
+    
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
